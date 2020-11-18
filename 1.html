@@ -1,0 +1,61 @@
+<style>/* CSS Document */
+.anniu{
+display:block;
+width:120px;
+height:40px;
+background-color:#333333;
+color:#FFFFFF;
+text-align:center;
+font-size:18px;
+line-height:40px;
+border-radius: 25px;
+border:none;
+box-shadow:none;
+text-decoration: none;
+transition: box-shadow 0.5s;
+-webkit-transition: box-shadow 0.5s;
+}
+.anniu:hover{
+    box-shadow:0px 0px 5px 1px #808080;
+}
+.anniu:active{
+    box-shadow:0px 0px 5px 1px #FF0000;
+}</style>   
+
+
+
+<!--弹出开始-->
+<script>
+
+   function one(){
+    document.getElementById('light').style.display='block';
+    document.getElementById('fade').style.display='block'
+   }
+window.onload = one;//自动加载one
+
+</script>
+<script>
+   function two(){
+    document.getElementById('light').style.display='none';
+    document.getElementById('fade').style.display='none'}
+</script>
+<div id="light" class="white_content" style="display: none; position: absolute; top: 10%; left: 25%; width: 50%; height: 31%; padding: 16px; border: 16px solid #6E9EF1; background-color: white; z-index:1002; overflow: auto;">
+    <center><h2 style="color:#ff4343">品牌词，欢迎您的到来！</h2></center>
+    <div style=" width: 49%;float:left">
+   <h4 style="color:#2E2EFE">最近新加线路：</h4>
+   <span style="color:#5858FA">1.</span><span style="color:#D434ED">东京、高速8K</span><br/>
+   <span style="color:#5858FA">2.</span><span style="color:#D434ED">香港台湾路线</span><br/>
+   <span style="color:#5858FA">3.</span><span style="color:#D434ED">新加坡、IPLC专线</span><br/>
+   <span style="color:#5858FA">4.</span><span style="color:#D434ED">华盛顿、解锁奈飞</span><br/>
+   </div>
+   <div style=" width: 49%;float:right">
+   <h4 style="color:#ff4343">优惠福利：</h4>
+   <span style="color:#5858FA">1.</span><span style="color:#D434ED">新用户流量畅用2天</span><br/>
+   <span style="color:#5858FA">2.</span><span style="color:#D434ED">新用户套餐现金5折券<a href="http://shop.claidx.com">点击获取</a></span><br/>
+   <span style="color:#5858FA">3.</span><span style="color:#D434ED">新用户推荐获朋友获取高额流量</span><br/>
+   <span style="color:#5858FA">4.</span><span style="color:#D434ED">被邀请用户流量畅用，额外赠送余额！</span><br/>
+<br/><br/><br/><br/>
+   <a href="javascript:void(0)" onclick="two()" class="anniu" data-title="朕已阅" style="margin-right：20px;float:right;text-decoration:none">朕已阅</a>
+   </div>
+</div>
+<a href="javascript:void(0)" onclick="one()">打开窗口</a>
